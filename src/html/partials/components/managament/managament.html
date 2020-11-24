@@ -1,0 +1,27 @@
+<section class="managament" id="managament">
+  <div class="container managament__container">
+    <h2 class="managament__title">
+      Managament
+    </h2>
+    <div class="managament__cardsWrapper">
+      <ul class="managament__list">
+        @@include('../partials/components/managament/managamentCard.html', {
+        "link": "images/person-1.png",
+        "name": "Courteney Cox",
+        "profession": "Marketing Manager"
+        })
+        @@include('../partials/components/managament/managamentCard.html', {
+        "link": "images/person-2.png",
+        "name": "Matt LeBlanc",
+        "profession": "Finance Manager"
+        })
+        @@include('../partials/components/managament/managamentCard.html', {
+        "link": "images/person-3.png",
+        "name": "David Schwimmer",
+        "profession": "Creative Director"
+        })
+      </ul>
+      <a href="#" class="managament__linkAll">Show all</a>
+    </div>
+  </div>
+</section>

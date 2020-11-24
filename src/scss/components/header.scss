@@ -1,0 +1,125 @@
+.noScroll {
+  overflow-y: hidden;
+}
+.header  {
+  background-color: #24282f;
+  z-index: 2;
+  @media only screen and (max-width: 767.98px) {
+     position: sticky;
+     top: 0;
+     z-index: 2;
+      &__hamburger {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        z-index: 100;
+        span {
+          position: absolute;
+          content: '';
+          width: 30px;
+          height: 2px;
+          background: #ffffff;
+          top: 50%;
+          margin-top: -1px;
+          left: 50%;
+          margin-left: -15px;
+
+          &::before {
+            position: absolute;
+            content: '';
+            width: 30px;
+            height: 2px;
+            background: #ffffff;
+            top: 50%;
+            transform: translate(-15px, 8px);
+            left: 50%;
+            transition: 0.5s;
+          }
+
+          &::after {
+            position: absolute;
+            content: '';
+            width: 30px;
+            height: 2px;
+            background: #ffffff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-15px, -9px);
+            transition: 0.5s;
+          }
+        }
+      }
+    &__hamburger--active {
+    span {
+      height: 0 !important;
+        &::before {
+          transform: rotate(45deg) !important;
+        }
+        &::after {
+          transform-origin: center !important;
+          transform: rotate(-45deg) !important;
+        }
+      }
+    }
+  }
+  &__nav {
+    position: relative;
+  }
+  
+ 
+  &__container {
+    display: flex;justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  }
+  &__navList{
+    display: flex;
+    transition: all .3s;
+    align-items: center;
+    @media only screen and (max-width: 767.98px) {
+      display: none;
+    }
+    &--active {
+      @media only screen and (max-width: 767.98px) {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        background-color: #24282f;
+        display: flex;
+        flex-direction: column;
+        transition: all .3s;
+      }
+    }
+  }
+  &__navItem {
+     @media only screen and (max-width: 767.98px) {
+       margin-top: 40px;
+       font-size: 40px;
+     }
+  }
+  &__navItem a {
+    font-family: 'Open Sans',sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 60px;
+    padding-bottom: 15px;
+    transition: all 1.3s;
+    &:hover {
+      color: gray;
+      border-bottom: 1px solid #fff;
+    }
+    @media only screen and (max-width: 767.98px) {
+      
+      margin-left: 0;
+    }
+  }
+  // &__navItem a
+}

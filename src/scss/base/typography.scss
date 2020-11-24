@@ -1,0 +1,20 @@
+// Typography
+//
+// Base font styles for headings and links.
+
+h1 {
+  font-size: 40px;
+  font-family: 'Raleway',sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+h2 {
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+p {
+  font-family: 'Open Sans',sans-serif;
+  font-size: 14px;
+}

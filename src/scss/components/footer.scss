@@ -1,0 +1,121 @@
+.footer {
+  position: relative;
+  background-color: #2b2f35;
+  color: #6e7279;
+  padding-top: 80px;
+  z-index: 1;
+  &::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 65px;
+    bottom: 0;
+    background-color: #24282f;
+    z-index: -1;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+     @media only screen and (max-width: 991.98px) {
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+     }
+  }
+  &__infoItem {
+    padding-bottom: 65px;
+  }
+  &__infoTitle {
+    color: #b5a263;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Open Sans',
+    sans-serif;
+    margin-bottom: 26px;
+  }
+  &__description {
+    line-height: 1.5;
+    max-width: 280px;
+  }
+  &__address {
+    font-family: 'Open Sans',
+    sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  &__contactLink a {
+    color: #6e7279;
+    line-height: 1.3;
+    text-decoration: none;
+    transition: all .3s;
+    &:hover{
+      color: blue;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__form input {
+    color: #6e7279;
+    border: 1px solid #6e7279;
+    background-color: #24282f;
+    font-weight: 400;
+     font-family: 'Open Sans',
+     sans-serif;
+     font-size: 14px;
+     width: 299px;
+     height: 37px;
+     margin-bottom: 12px;
+     padding-left: 15px;
+     &:focus {
+       border: 1px solid #b5a263;
+     }
+  }
+  &__form button {
+    color: #ffffff;
+    border: none;
+    background-color: #b5a263;
+    font-weight: 400;
+    font-family: 'Open Sans',
+      sans-serif;
+    font-size: 14px;
+    width: 299px;
+    height: 37px;
+    margin-bottom: 12px;
+    transition: all .3s;
+    &:hover{
+      color: #b5a263;
+      font-size: 19px;
+      background-color: #fff;
+    }
+  }
+  &__privacy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__social {
+    display: flex;
+  }
+  &__socialLink a {
+    color: #6e7279;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #6e7279;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    transition: all .3s;
+    &:hover {
+      background-color: #b5a263;
+      color: #fff;
+      border-color: #fff;
+    }
+  }
+}

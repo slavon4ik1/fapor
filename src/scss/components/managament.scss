@@ -1,0 +1,103 @@
+.managament {
+ 
+  &__title{
+    position: relative;
+    color: #24282f;
+    text-align: center;
+    margin-top: 166px;
+    margin-bottom: 77px;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 77px;
+      height: 2px;
+      background-color: #b5a263;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    @media only screen and (max-width: 991.98px) {
+      flex-wrap: wrap;
+    }
+    
+  }
+  &__list li {
+    @media only screen and (max-width: 991.98px) {
+      margin-top: 40px;
+    }
+  }
+  &__name h3  {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  &__name span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #b5a263;
+  }
+  &__card {
+    text-decoration: none;
+    font-size: 16px;
+    color: #232323;
+   
+  }
+  &__cardsWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__cardWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__socialList {
+    display: flex;
+   
+  }
+  &__socialItem {
+    margin-left: 10px;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #dedede;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all .3s;
+    &:hover {
+      color: blue;
+    }
+  }
+  &__linkAll {
+    font-family: 'Open Sans',
+    sans-serif;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 28px;
+    text-align: center;
+    border: 1px solid #24282f;
+    text-decoration: none;
+    color: #24282f;
+    text-transform: uppercase;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 40px;
+    background-color: #fff;
+    transition: all .3s;
+    &:hover {
+      background-color: #24282f;
+      color: #fff;
+    }
+  }
+}
